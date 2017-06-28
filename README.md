@@ -50,5 +50,5 @@ You can see the logs in your ElasticBeanstalk environment on the tab 'Logs'.
 * Spring: https://spring.io
 
 # Feedback
-Feel free to contact me on GitHub or on Twitter (@bernhard_keprt) if you have any questions.
+Feel free to contact me on GitHub or on Twitter [@bernhard_keprt](https://twitter.com/bernhard_keprt) if you have any questions.
 Also feel free to give me feedback on the example code, always looking forward to improve something, first of all: myself ;)
