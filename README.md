@@ -44,7 +44,11 @@ You can see the logs in your ElasticBeanstalk environment on the tab 'Logs'.
 * Consider using spot instances to reduce costs in case your messages are not time critical.
 * Don't return a HTTP status 200 immediately while starting a batch-thread / background thread / whatever (async message processing). As soon as your endpoint returns HTTP status 200, the message is deleted from the queue making it impossible to be retried by another node. Hence, if your background-thread fails, you would have to re-schedule the message for your own or handle the error differently.
 
-# Feedback
+# Resources
+* ElasticBeanstalk: https://aws.amazon.com/elasticbeanstalk/
+* ElasticBeanstalk Worker Environments: http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/using-features-managing-env-tiers.html
+* Spring: https://spring.io
 
+# Feedback
 Feel free to contact me on GitHub or on Twitter (@bernhard_keprt) if you have any questions.
 Also feel free to give me feedback on the example code, always looking forward to improve something, first of all: myself ;)
