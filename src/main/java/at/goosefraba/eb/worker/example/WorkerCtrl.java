@@ -36,15 +36,15 @@ public class WorkerCtrl {
             @RequestBody String sqsdMessageBody) {
 
         LOG.info("User-Agent: {}", sqsdMessageUserAgent);
-        LOG.info("Content-Type", sqsdMessageContentType);
-        LOG.info("Message-Body", sqsdMessageBody);
+        LOG.info("Content-Type: {}", sqsdMessageContentType);
+        LOG.info("Message-Body: {}", sqsdMessageBody);
         LOG.info("X-Aws-Sqsd-Msgid: {}", sqsdMessageId);
         LOG.info("X-Aws-Sqsd-Taskname: {}", sqsdMessagePeriodicTaskName);
         LOG.info("X-Aws-Sqsd-Queue: {}", sqsdMessageQueueName);
-        LOG.info("X-Aws-Sqsd-First-Received-At", sqsdMessageReceivedTimestamp);
-        LOG.info("X-Aws-Sqsd-Receive-Count", sqsdMessageCounts);
+        LOG.info("X-Aws-Sqsd-First-Received-At: {}", sqsdMessageReceivedTimestamp);
+        LOG.info("X-Aws-Sqsd-Receive-Count: {}", sqsdMessageCounts);
         LOG.info("X-Aws-Sqsd-Attr-(message-attribute-name): {}", sqsdMessageCustomAttribute);
-        LOG.info("X-Aws-Sqsd-Scheduled-At", sqsdMessageTaskSchdeuleTime);
+        LOG.info("X-Aws-Sqsd-Scheduled-At: {}", sqsdMessageTaskSchdeuleTime);
         LOG.info("X-Aws-Sqsd-Sender-Id: {}", sqsdMessageSenderId);
 
         return new ResponseEntity<>(HttpStatus.OK);
